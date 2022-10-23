@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
 import {
-  ProfileWrapp,
-  ProfileDescription,
   Avatar,
   Name,
   Tag,

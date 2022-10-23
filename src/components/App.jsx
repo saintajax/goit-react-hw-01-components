@@ -8,7 +8,7 @@ import { Statistics } from './Statistics/Statistics';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import { FriendList } from './FriendList/FriendList';
 import { AppWrapper } from './App.styled';
-import { Box, SideBar } from './Box/Box';
+import { SideBar } from './Box/Box';
 
 export const App = () => (
   <AppWrapper>

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import css from 'components/TransactionHistory/TransactionHistory.module.css';
 import {
   TransactionTable,
   TableHead,

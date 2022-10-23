@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-import css from 'components/Statistics/Statistics.module.css';
-import { getRandomColor } from '../utils/randomColor';
 import {
   StatSection,
   StatTitle,
