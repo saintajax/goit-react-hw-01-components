@@ -1,0 +1,23 @@
+.transaction-history {
+  width: 60%;
+  height: 100%;
+  text-align: center;
+}
+
+.transaction-history > thead {
+  background-color: lightskyblue;
+  text-transform: uppercase;
+}
+
+.transaction-history > tbody {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.transaction-history > tr:nth-child(n) {
+  background-color: white;
+}
+
+.transaction-history > tr:nth-child(2n) {
+  background-color: #d6d9db;
+}
