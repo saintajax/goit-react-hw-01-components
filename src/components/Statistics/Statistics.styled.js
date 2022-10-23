@@ -23,7 +23,7 @@ export const StatList = styled.ul`
   list-style: none;
   margin: ${props => props.theme.space[0]};
   padding: 0;
-  font-size: 20px;
+  font-size: ${props => props.theme.fontSizes.m};
 `;
 
 export const StatItem = styled.li`
