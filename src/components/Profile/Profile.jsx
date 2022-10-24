@@ -10,10 +10,11 @@ import {
   StatQuantyty,
 } from './Profile.styled';
 import { Box } from '../Box/Box';
+import { turnThousands } from '../utils/turnThousands';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <Box>
+    <Box width="40%">
       <Box display="flex" flexDirection="column" alignItems="center">
         <Avatar src={avatar} alt={username} />
         <Name>{username}</Name>
@@ -24,21 +25,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <StatList>
         <StatItem>
           <StatLable>Followers</StatLable>
-          <StatQuantyty>
-            {stats.followers > 1000 ? stats.followers / 1000 : stats.followers}
-          </StatQuantyty>
+          <StatQuantyty>{turnThousands(stats.followers)}</StatQuantyty>
         </StatItem>
         <StatItem>
           <StatLable>Views</StatLable>
-          <StatQuantyty>
-            {stats.views > 1000 ? stats.views / 1000 : stats.views}
-          </StatQuantyty>
+          <StatQuantyty>{turnThousands(stats.views)}</StatQuantyty>
         </StatItem>
         <StatItem>
           <StatLable>Likes</StatLable>
-          <StatQuantyty>
-            {stats.likes > 1000 ? stats.likes / 1000 : stats.likes}
-          </StatQuantyty>
+          <StatQuantyty>{turnThousands(stats.likes)}</StatQuantyty>
         </StatItem>
       </StatList>
     </Box>
@@ -54,5 +49,5 @@ Profile.propTypes = {
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
 };

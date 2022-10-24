@@ -5,7 +5,7 @@ export const StatSection = styled.section`
   display: flex;
   border: 1px solid grey;
   flex-direction: column;
-  width: 320px;
+  width: 40%;
 `;
 
 export const StatTitle = styled.h2`

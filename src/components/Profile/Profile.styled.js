@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfileWrapp = styled.div`
-  width: 320px;
+  width: 60%;
   margin: 0 auto;
   border: 1px solid grey;
   border-radius: 4px;

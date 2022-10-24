@@ -10,12 +10,12 @@ import {
 
 export const Statistics = ({ title, stats }) => (
   <StatSection>
-    <StatTitle>{title}</StatTitle>
+    {title && <StatTitle>{title}</StatTitle>}
     <StatList>
-      {stats.map(stat => (
-        <StatItem key={stat.id}>
-          <StatLable>{stat.label}</StatLable>
-          <StatPercentage>{stat.percentage}%</StatPercentage>
+      {stats.map(({ id, label, percentage }) => (
+        <StatItem key={id}>
+          <StatLable>{label}</StatLable>
+          <StatPercentage>{percentage}%</StatPercentage>
         </StatItem>
       ))}
     </StatList>
@@ -30,5 +30,5 @@ Statistics.propTypes = {
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
     })
-  ),
+  ).isRequired,
 };
