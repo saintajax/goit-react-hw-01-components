@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const ProfileWrapp = styled.div`
   width: 320px;
@@ -18,7 +18,7 @@ export const Avatar = styled.img`
   display: block;
   margin-bottom: 40px;
   margin-top: 40px;
-  border-radius: 50%;
+  border-radius: ${props => props.theme.radii.round};
   overflow: hidden;
   width: 150px;
   height: 150px;
